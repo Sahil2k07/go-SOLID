@@ -5,6 +5,7 @@ import "github.com/Sahil2k07/go-SOLID/src/queries"
 type UserHandlers interface {
 	HandleSignup(name, email, password string) error
 	HandleLogin(email, password string) error
+	HandleUpdateUser(name string) error
 }
 
 type UserService struct {
@@ -23,6 +24,12 @@ func (us *UserService) HandleLogin(email, password string) error {
 
 func (us *UserService) HandleSignup(name, email, password string) error {
 	// logic
+
+	return nil
+}
+
+func (us *UserService) HandleUpdateUser(name string) error {
+	// login
 
 	return nil
 }
